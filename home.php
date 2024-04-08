@@ -28,73 +28,46 @@
                             switch($ostatok){
                                 case(0):?>
                                     <div class="col-lg-12">
-                                        <div class="blog-post">
-                                            <?php 
-                                                //должно находится внутри цикла
-                                                if( has_post_thumbnail() ) {
-                                                    the_post_thumbnail('large', array('class' => 'img-fluid'));
-                                                }
-                                                else {
-                                                    echo '<img src="'.get_template_directory_uri(  ).'/images/blog/blog-2.jpg" />';
-                                                    }
-                                                ?>
-                                            <!-- <img src="images/blog/blog-1.jpg" alt="" class="img-fluid"> -->
-                                            <div class="mt-4 mb-3 d-flex">
-                                                <div class="post-author mr-3">
-                                                    <i class="fa fa-user"></i>
-                                                    <span class="h6 text-uppercase"><?php the_author(); ?></span>
-                                                </div>
-
-                                                <div class="post-info">
-                                                    <i class="fa fa-calendar-check"></i>
-                                                <?php the_date( 'j F Y', '<span>', '</span>' ); ?>
-                                                </div>
-                                            </div>
-                                            <a href="<? get_the_permalink(); ?>" class="h4 ">
-                                                <? the_title();?>
-                                            </a>
-                                            <p class="mt-3"><? the_excerpt( );?></p>
-                                            <a href="blog-single.html" class="read-more">Читать статью <i class="fa fa-angle-right"></i></a>
-                                        </div>
-                                    </div>
                                 
                                 <?php
                                 break;
                                 default:?>
                                     <div class="col-lg-6">
-                                        <div class="blog-post">
-                                            <?php 
-                                                //должно находится внутри цикла
-                                                if( has_post_thumbnail() ) {
-                                                    the_post_thumbnail('large', array('class' => 'img-fluid'));
-                                                }
-                                                else {
-                                                    echo '<img src="'.get_template_directory_uri(  ).'/images/blog/blog-2.jpg" />';
-                                                    }
-                                                ?>
-                                            <img src="images/blog/blog-1.jpg" alt="" class="img-fluid">
-                                            <div class="mt-4 mb-3 d-flex">
-                                                <div class="post-author mr-3">
-                                                    <i class="fa fa-user"></i>
-                                                    <span class="h6 text-uppercase"><?php the_author(); ?></span>
-                                                </div>
-
-                                                <div class="post-info">
-                                                    <i class="fa fa-calendar-check"></i>
-                                                <?php the_date( 'j F Y', '<span>', '</span>' ); ?>
-                                                </div>
-                                            </div>
-                                            <a href="<? get_the_permalink(); ?>" class="h4 ">
-                                                <? the_title();?>
-                                            </a>
-                                            <p class="mt-3"><? the_excerpt( );?></p>
-                                            <a href="blog-single.html" class="read-more">Читать статью <i class="fa fa-angle-right"></i></a>
-                                        </div>
-                                    </div>
                                 
                                 <?php
                                 break;
-                            }
+                            }?>
+
+                                    <div class="blog-post">
+                                        <?php 
+                                            //должно находится внутри цикла
+                                            if( has_post_thumbnail() ) {
+                                                the_post_thumbnail('large', array('class' => 'img-fluid'));
+                                            }
+                                            else {
+                                                echo '<img src="'.get_template_directory_uri(  ).'/images/blog/blog-2.jpg" />';
+                                                }
+                                            ?>
+                                        <!-- <img src="images/blog/blog-1.jpg" alt="" class="img-fluid"> -->
+                                        <div class="mt-4 mb-3 d-flex">
+                                            <div class="post-author mr-3">
+                                                <i class="fa fa-user"></i>
+                                                <span class="h6 text-uppercase"><?php the_author(); ?></span>
+                                            </div>
+
+                                            <div class="post-info">
+                                                <i class="fa fa-calendar-check"></i>
+                                            <?php the_date( 'j F Y', '<span>', '</span>' ); ?>
+                                            </div>
+                                        </div>
+                                        <a href="<? get_the_permalink(); ?>" class="h4 ">
+                                            <? the_title();?>
+                                        </a>
+                                        <p class="mt-3"><? the_excerpt( );?></p>
+                                        <a href="blog-single.html" class="read-more">Читать статью <i class="fa fa-angle-right"></i></a>
+                                    </div>
+                                </div>
+                            <?php
                         endwhile; else: ?>
                         Записей нет.
                     <?php endif; ?>
