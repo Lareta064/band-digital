@@ -16,7 +16,7 @@
 	add_theme_support('title-tag');
 	//previe whis thumbnail
 	add_theme_support( 'post-thumbnails' );
-	set_post_thumbnail_size( 730, 480 );//===свой размер миниатюры по умолчанию ===
+	set_post_thumbnail_size( 730, 480, true );//===свой размер миниатюры по умолчанию, параметр true делает точн по этому размеру===
 	## отключаем создание миниатюр файлов для указанных размеров
 	add_filter( 'intermediate_image_sizes', 'delete_intermediate_image_sizes' );
 
@@ -82,5 +82,26 @@
 
 	// свой класс построения меню:
 
+	// удаляет H2 из шаблона пагинации
+	add_filter('navigation_markup_template', 'my_navigation_template', 10, 2 );
+	function my_navigation_template( $template, $class ){
+		/*
+		Вид базового шаблона:
+		<nav class="navigation %1$s" role="navigation">
+			<h2 class="screen-reader-text">%2$s</h2>
+			<div class="nav-links">%3$s</div>
+		</nav>
+		*/
 
+		return '
+		<nav class="navigation %1$s" role="navigation">
+			<div class="nav-links">%3$s</div>
+		</nav>
+		';
+	}
+
+	// выводим пагинацию
+	the_posts_pagination( array(
+		'end_size' => 2,
+	) );
 ?>

@@ -1237,8 +1237,13 @@ BLOG PAGE
 
 .blog-post img {
   border-radius: 5px;
+  height: 230px;
+  object-fit: cover;
+  width: 100%;
 }
-
+.blog-wrap .col-lg-8 .col-lg-12 .blog-post img{
+  height: 360px;
+}
 .blog-post .post-author i,
 .blog-post .post-info i {
   margin-right: 5px;
@@ -1253,7 +1258,21 @@ BLOG PAGE
   margin-bottom: 40px;
   padding-left: 20px;
 }
-
+.pagination .page-numbers{
+ display: inline-block;
+    width: 40px;
+    height: 40px;
+   border-radius: 2px;
+   border: 1px solid #c6c5c5;
+   cursor: pointer;
+   text-align: center;
+   line-height: 38px;
+   font-size: 18px;
+}
+.pagination .page-numbers:hover{
+  border: 1px solid blue;
+}
+.pagination .page-numbers.current{color: blue;}
 .category ul li {
   margin-bottom: 10px;
   text-transform: capitalize;
