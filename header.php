@@ -36,18 +36,18 @@
 
         <div class="collapse navbar-collapse justify-content-end" id="mainNav">
           <?php
-          wp_nav_menu([
-					'theme_location' => 'header',
-					'container'       => false,
-					'container_class' => false,
-					'container_id'    => false,
-					'menu_class'      => 'nav navbar-nav menu_nav justify-content-center',
-					'menu_id'         => false,
-					'echo'            => true,
-					'items_wrap'      => '<ul  class="%2$s">%3$s</ul>',
-					'depth'           => 2,
-          'walker'          => new  WP_Bootstrap_Navwalker(),
-				]);
+              wp_nav_menu([
+              'theme_location' => 'header',
+              'container'       => false,
+              'container_class' => false,
+              'container_id'    => false,
+              'menu_class'      => 'nav navbar-nav menu_nav justify-content-center',
+              'menu_id'         => false,
+              'echo'            => true,
+              'items_wrap'      => '<ul  class="%2$s">%3$s</ul>',
+              'depth'           => 2,
+              'walker'          => new  WP_Bootstrap_Navwalker(),
+            ]);
           
           ?>
           <!-- <ul class="navbar-nav">

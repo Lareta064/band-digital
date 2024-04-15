@@ -1297,7 +1297,7 @@ BLOG PAGE
   padding: 5px 8px;
   border: 1px solid #eee;
   margin-bottom: 5px;
-  font-size: 14px;
+  font-size: 14px!important;
   display: inline-block;
 }
 
