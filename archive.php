@@ -6,8 +6,26 @@
         <div class="row justify-content-center">
             <div class="col-lg-8 m-auto text-center col-sm-12 col-md-12">
                 <div class="banner-content content-padding">
-                    <h1 class="text-white">Promodise журнал</h1>
-                    <p>Полезные статьи про маркетинг и диджитал</p>
+                    
+                   <h1 class="text-white">
+                       <?php 
+                           // если страница Рубрики (категории)
+                           if(is_category()){
+                                echo __('<small> Категория <small><br>') . get_queried_object( ) -> name;
+                            
+                          }
+                            // если страница Метки
+                          if(is_tag()){
+                                echo __('<small> Статьи с меткой <small><br>') . get_queried_object( ) -> name;
+                            
+                          }
+                            // если страница по автору
+                          if(is_author()){
+                            echo __('<small> Автор <small><br>') . get_the_author_meta('display_name');
+                          }
+                      ?>
+                   
+                    </h1> 
                 </div>
             </div>
         </div>
@@ -95,3 +113,5 @@
     </div>
 </section>
 <?php get_footer(); ?>
+
+

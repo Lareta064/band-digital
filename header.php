@@ -50,39 +50,6 @@
             ]);
           
           ?>
-          <!-- <ul class="navbar-nav">
-            <li class="nav-item">
-              <a class="nav-link" href="/"> Главная </a>
-            </li>
-            <li class="nav-item dropdown">
-              <a
-                class="nav-link dropdown-toggle"
-                href="#"
-                id="navbarWelcome"
-                role="button"
-                data-toggle="dropdown"
-                aria-haspopup="true"
-                aria-expanded="false"
-                >О нас</a
-              >
-              <div class="dropdown-menu" aria-labelledby="navbarWelcome">
-                <a class="dropdown-item" href="about.html"> О компании </a>
-                <a class="dropdown-item" href="about.html"> Об услугах </a>
-              </div>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link smoth-scroll" href="service.html">Услуги</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link smoth-scroll" href="pricing.html">Цены</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link smoth-scroll" href="blog.html">Журнал</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link smoth-scroll" href="contact.html">Контакты</a>
-            </li>
-          </ul> -->
         </div>
       </div>
     </nav>

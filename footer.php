@@ -29,14 +29,7 @@
                     'walker'          => new  WP_Bootstrap_Navwalker(),
                   ]);
               ?>
-              <!-- <ul>
-                <li><a href="#">о нас</a></li>
-                <li><a href="#">услуги</a></li>
-                <li><a href="#">цены</a></li>
-                <li><a href="#">команда</a></li>
-                <li><a href="#">отзывы</a></li>
-                <li><a href="#">журнал</a></li>
-              </ul> -->
+
             </div>
           </div>
 
@@ -58,23 +51,10 @@
                   ]);
               ?> 
               
-              <!-- <ul>
-                <li><a href="#">Как это работает</a></li>
-                <li><a href="#">Поддержка</a></li>
-                <li><a href="#">Политика данных</a></li>
-                <li><a href="#">Сообщить об ошибке</a></li>
-                <li><a href="#">Лицензия</a></li>
-                <li><a href="#">Оферта</a></li>
-              </ul> -->
             </div>
           </div>
           <div class="col-lg-3 col-sm-6 col-md-6">
-            <div class="footer-widget footer-text">
-              <h4>Наши контакты</h4>
-              <p class="mail"><span>Email:</span> promdise@gmail.com</p>
-              <p><span>Телефон :</span>+7 495 27-73-894</p>
-              <p><span>Адрес:</span> г. Москва, ул. 40 лет СССР, строение 3, офис 37</p>
-            </div>
+             <?php get_sidebar('contacts'); ?>   
           </div>
         </div>
         <div class="row">

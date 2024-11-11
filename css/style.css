@@ -613,7 +613,7 @@ INner Pages
 }
 
 .page-banner-area {
-  background: url("../images/banner/1.jpg") no-repeat 50% 50%;
+ background-repeat: no-repeat;
   background-size: cover;
 }
 
@@ -1301,7 +1301,7 @@ BLOG PAGE
   display: inline-block;
 }
 
-.search i {
+.search button[type="submit"] {
   position: absolute;
   right: 0px;
   top: 0px;
